@@ -1,0 +1,100 @@
+:root {
+    --primary-color: #DCCFEC;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.App {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: "Inter", sans-serif;
+}
+
+.App h1 {
+    margin-bottom: 10px;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.div--main {
+    background-color: var(--primary-color);
+    color: #fff;
+    width: 50vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    border-radius: 10px;
+}
+
+.title--state {
+    margin: 10px 0px;
+    font-weight: 600;
+    font-size: 30px;
+    
+}
+
+.btn--state, .btn--nextQuestion {
+    color: var(--primary-color);
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 60%;
+    height: 10%;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.btn--state {
+    position: absolute;
+    bottom: 10%;
+}
+
+.btn--nextQuestion {
+    position: absolute;
+    top: 40%;
+}
+
+.div--question {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.div--question h2 {
+    margin-bottom: 10px;
+}
+
+.options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row: auto auto;
+    grid-gap: 10px;
+    place-items: center;
+}
+
+.options label {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.options input {
+    margin-right: 5px;
+}
+
+.endScreen p {
+    font-weight: 600;
+    font-size: 40px;
+    position: absolute;
+    top: 40%;
+}
